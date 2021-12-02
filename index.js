@@ -7,9 +7,9 @@ const PORT = process.env.PORT || 8080 //pulls this from heroku
 
 server.get('/api/users', (req, res)=>{
     res.json([
-        { id: 1, username: `darwin` },
-        { id: 2, username: `wallace` },
-        { id: 3, username: `maxwell` },
+        { id: 1, username: `darwin`, pwd: "phasma" },
+        { id: 2, username: `wallace`, pwd: "monster_truck" },
+        { id: 3, username: `maxwell`, pwd: "pizza" },
     ])
 })
 
