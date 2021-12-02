@@ -1,7 +1,10 @@
 require('dotenv').config()
+const path = require('path')
 const express = require('express')
 
 const server = express();
+server.use(express.json())
+server.use(express.static())
 
 const PORT = process.env.PORT || 8080 //pulls this from heroku
 
